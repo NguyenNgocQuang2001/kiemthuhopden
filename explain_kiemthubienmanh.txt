@@ -1,0 +1,15 @@
+Test 1, 7, 13, 19 : Trường hợp 1
+	input có số âm nhưng ko bị lỗi tràn mảng, vẫn tìm ra kết quả
+	bởi vì trong các ngôn ngữ khác như C, C++, Java, ..... mảng được đánh chỉ số từ 0 cho đến n - 1 
+	và không tính chỉ số âm, nhưng trong py mảng vẫn đánh số từ 0 đến n - 1 nhưng vẫn tính chỉ số âm từ -1 đến -n+1
+	vd a[-1] tức là a[n-1], a[-2] là a[n-2] nên chương trình vấn chạy bình thường ko bắn ra exception
+Test 12, 24 : Trường hợp 2
+	input có số lớn hơn hoặc bằng kích thước của mảng , py đánh số từ 0 đến n - 1, dùng được chỉ số âm từ -1
+	đến -n + 1 nhưng chỉ số >= n sẽ bị lỗi tràn mảng, tuy nhiên code vẫn chạy bình thường không bắn ra exception
+	bởi vì :
+			for i in range(y1, y2 + 1) :
+				for j in range(x1, x2 + 1) :
+					ans += a[i][j]
+	vs dữ liệu đầu vào như vậy, code chỉ chạy được đến vòng for đầu hoặc không chạy vòng for nào
+	do đó lệnh ans += a[i][j] chưa từng được chạy, nên chương trình sẽ hiểu là hình chữ nhật không hợp lệ
+	và trả ra đáp án là 0 mà ko bắn ra exception

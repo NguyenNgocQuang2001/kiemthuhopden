@@ -1,0 +1,25 @@
+Đề bài : cho 1 mảng 2 chiều kích thước n x m
+Yêu cầu : nhập vào 2 tọa độ (x1, y1) là góc trái dưới 
+	và (x2, y2) là góc phải trên của hình chữ nhật trên mảng 2 chiều
+	Tính tổng các phần tử trong hình chữ nhật 
+điều kiện :
+(1)	x1 <= x2, y1 <= y2 
+(2)	0 <= x1, x2 < m
+(3)	0 <= y1, y2 < n
+
+# ngôn ngữ : python
+# thư viện hỗ trợ : pytest, subprocess
+# trong code em sẽ lấy ví dụ mảng a vs kích thước 5 x 10
+# mặc định ban đầu tổng sẽ là 0, nếu điều kiện (1) không thỏa mãn nhưng điều kiện (2) và (3) thỏa mãn, tức là hình chữ nhật không hợp lệ thì đáp án sẽ là 0
+# còn điều kiện (2) hoặc (3) không thỏa mãn thì cho dù điều kiện (1) có thỏa mãn hay ko thì đáp án sẽ là None (do lỗi tràn mảng)
+# chương trình : sumarray.py
+# cách test : chạy file run_test.py
+# kết quả trong folder Result
+1) kiểm thử biên mạnh
+- các test case được để trong folder kiemthubienmanh
+- mô tả test : Testcase_kiemthubienmanh.txt
+- giải thích test failed : explain_kiemthubienmanh.txt
+2) Kiểm thử phân hoạch
+- các test case được để trong folder kiemthuphanhoach
+- mô tả test : Testcase_kiemthuphanhoach.txt
+- giải thích test failed : explain_kiemthuphanhoach.txt

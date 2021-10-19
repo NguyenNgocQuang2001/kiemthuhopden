@@ -1,0 +1,54 @@
+Miền : 	0 <= x1, x2 <= 9
+	0 <= y1, y2 <= 4
+	x1 <= x2, y1 <= y2
+các trường hợp kiểm thử :
+	không mất tính tổng quát, xét x1 ta thấy có 3 miền cần kiểm thử
+1) x1 < 0
+2) 0 <= x1 <= 9
+3) x1 > 9
+	có 4 tham số đầu vào nên sẽ có ít nhất 3^4 = 81 trường hợp kiểm thử
+	hơn nữa, vs mỗi trường hợp x1, x2 hoặc y1, y2 cùng nằm trong 1 miền, ta sẽ phải kiểm thử 2 lần 
+	bởi điều kiện x1 <= x2 hay y1 <= y2 ( do khác miền thì tính <= đã quá rõ ràng ) 
+	nên số lần kiểm thử còn nhiều hơn nữa
+Vì số trường hợp kiểm thử quá nhiều, nên em xin kiểm thử vs 20 test
+Test case (theo thứ tự x1, y1, x2, y2)
++) test 1 : (-5, 6, 8, 3) // TH2
+	expected : None
++) test 2 : (2, -6, 8, 1)
+	expected : None
++) test 3 : (4, 5, 6, 7)
+	expected : None
++) test 4 : (3, 1, 9, 4)
+	expected : 896
++) test 5 : (6, 4, 9, 4)
+	expected : 194
++) test 6 : (4, -2, 9, -1) // TH1
+	expected : None
++) test 7 : (-1, -2, -3, -4) // TH1
+	expected : None
++) test 8 : (11, 2, 6, 4) // TH2
+	expected : None
++) test 9 : (10, 9, 8, 7) // TH2
+	expected : None
++) test 10 : (-5, 3, 1, 3) // TH1
+	expected : None
++) test 11 : (4, 4, 4, 4)
+	expected : 45
++) test 12 : (10, 11, 12, 13)
+	expected : None
++) test 13 : (-1, 5, -2, 3) // TH2
+	expected : None
++) test 14 : (5, 4, 5, 4)
+	expected : 46
++) test 15 : (1, 2, 1, 9)
+	expected : None
++) test 16 : (1, 1, 9, 4)
+	expected : 1116
++) test 17 : (11, 2, 11, 4)
+	expected : None
++) test 18 : (2, -3, 9, 4) // TH1
+	expected : None
++) test 19 : (-8, -3, 9, 4) // TH1 
+	expected : None
++) test 20 : (0, 0, 0, 0)
+	expected : 1

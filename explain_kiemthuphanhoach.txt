@@ -1,0 +1,4 @@
+Test 6, 7, 10, 18, 19 : 
+	giống trường hợp 1 kiểm thử biên mạnh
+Test 1, 8, 9, 13 :
+	giống trường hợp 2 kiểm thử biên mạnh

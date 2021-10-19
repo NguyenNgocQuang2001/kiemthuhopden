@@ -1,0 +1,59 @@
+ĐK : 	0 <= x1, x2 <= 9
+	0 <= y1, y2 <= 4
+xác định giá trị kiểm thử :
+y1: min- = -1, min = 0, min+ = 1, nor = 2, max- = 3, max = 4, max+ = 5
+y2: min- = -1, min = 0, min+ = 1, nor = 2, max- = 3, max = 4, max+ = 5
+x1: min- = -1, min = 0, min+ = 1, nor = 4, max- = 8, max = 9, max+ = 10
+x2: min- = -1, min = 0, min+ = 1, nor = 4, max- = 8, max = 9, max+ = 10
+
+Test case (theo thứ tự x1, y1, x2, y2)
++) test 1 : (4, -1, -1, -1)
+	expected : None
++) test 2 : (4, 0, 0, 0)
+	expected : 0
++) test 3 : (4, 1, 1, 1)
+	expected : 0
++) test 4 : (4, 3, 8, 3)
+	expected : 185
++) test 5 : (4, 4, 9, 4)
+	expected : 285
++) test 6 : (4, 5, 10, 5)
+	expected : None
++) test 7 : (-1, -1, 4, -1)
+	expected : None
++) test 8 : (0, 0, 4, 0)
+	expected : 15
++) test 9 : (1, 1, 4, 1)
+	expected : 54
++) test 10 : (8, 3, 4, 3)
+	expected : 0
++) test 11 : (9, 4, 4, 4)
+	expected : 0
++) test 12 : (10, 5, 4, 5)
+	expected : None
++) test 13 : (-1, 2, -1, -1)
+	expected : None
++) test 14 : (0, 2, 0, 0)
+	expected : 0
++) test 15 : (1, 2, 1, 1)
+	expected : 0
++) test 16 : (8, 2, 8, 3)
+	expected : 68
++) test 17 : (9, 2, 9, 4)
+	expected : 120
++) test 18 : (10, 2, 10, 5)
+	expected : None
++) test 19 : (-1, -1, -1, 2)
+	expected : None
++) test 20 : (0, 0, 0, 2)
+	expected : 33
++) test 21 : (1, 1, 1, 2)
+	expected : 34
++) test 22 : (8, 3, 8, 2)
+	expected : 0
++) test 23 : (9, 4, 9, 2)
+	expected : 0
++) test 24 : (10, 5, 10, 2)
+	expected : None
++) test 25 : (4, 2, 4, 2)
+	expected : 25
